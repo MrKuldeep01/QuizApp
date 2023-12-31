@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body { width: 100vw;
+    height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(25deg, rgba(99, 182, 255, 0.678), crimson);
+}
+.app {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.mainHead {
+  font-size: 1.5rem;
+  border-radius: 30%;
+  border-bottom: 4px solid white;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  margin: 15px 0px;
+}
+.hero {
+  width: 55%;
+  height: 75vh;
+  padding: 25px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.151);
+  backdrop-filter: blur(5px);
+  position:relative;
+  overflow:hidden;
+}
+.hero *{
+    outline:none;
+    transition: all .6s ;
+}
+.questionhead {
+  font-size: 1.3rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 15px 0px;
+  background:rgba(255, 255, 255, 0.185);
+  padding: 15px;
+  width: 100;
+  border-radius: 10px 0px 15px 0px;
+}
+.optionBlock {
+  width: 100%;
+  height: 60%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.optionBlock li {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  text-transform: capitalize;
+  background: rgba(255, 255, 255, 0.344);
+  margin: 2px 0px;
+  border-bottom: 1px solid gray;
+  border-radius: 4px;
+
+}
+.optionBlock li:hover {
+    background: rgba(255, 255, 255, 0.484);
+    scale: 1.005;
+}
+.optionBlock label{
+    width: 90%;
+}
+.submitBtn{
+    width: 100%;
+    padding:10px;
+    background: royalblue;
+    color:rgba(255, 255, 255, 0.674);
+    font-size: 1.089rem;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-stretch: 200% ;
+    border:none;
+    position:absolute;
+    bottom: 0;
+    left:0;
+}
+.submitBtn:hover{
+    text-decoration: underline 2px;
+    color:white;
+    
+}
+.submitBtn:active{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    box-shadow: 0px -2px 2px rgba(255, 255, 255, 0.322);
+}
+.reloadBtn{
+  padding:10px 20px;
+  border-radius: 5px ;
+  border:none;
+  background: royalblue;
+  color: white;
+}
+.stop{
+  position: absolute;
+  right:10px;
+  bottom:30px;
+}
+.finish{
+  background: #00000027;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  padding: 50px;
+  text-align: center;
+}
+.finish p{
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: math;
+}
